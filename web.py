@@ -13,7 +13,7 @@ Start = driver.find_element(By.XPATH, '//*[@id="app"]/div[2]/nav/div/div[4]/butt
 
 username = driver.find_element(By.ID, 'username').send_keys("akshatchouksey07@gmail.com")
 
-password= driver.find_element(By.ID, 'password').send_keys("akshatchouksey123")
+password= driver.find_element(By.ID, 'password').send_keys(" *** ")
 
 Click = driver.find_element(By.ID , 'kc-login').click()
 
@@ -51,4 +51,5 @@ for i in range(1,11) :
     df = pd.DataFrame(DATA)
     df
     output_file = 'output{i}.csv'
+
     df.to_csv(output_file, index=False)
